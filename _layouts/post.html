@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<title>{{ page.title }}</title>
+	<style>
+		body{ 
+			font: 14px "맑은 고딕", sans-serif;
+   			line-height: 1.9em;
+   			text-align: left;
+			padding: 0 1.5em;
+			color: #444;
+		}
+		a{color:#680;}
+		h1{font-size: 2em; color: #566b77;}
+		p{font-size: 1em;}
+		ul{ background-color: #eee; border-radius: 5px;  border: 1px  solid #ddd;}
+		ul li{padding: 0.5em;}
+		code{
+			padding: 0;
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
+			margin: 0;
+			font-size: 100%;
+			background-color: #fcfcfc;
+			border-radius: 3px;
+			word-break:break-all;
+		}
+		pre{
+			padding: .8em; 
+			border: 1px solid #ccc; 
+			border-radius: 4px; 
+			background-color: #fcfcfc; 
+			tab-size: 2;
+		}
+	</style>
+</head>
+<body>
+
+	{{ content }}
+
+	{% include footer.html %}
+</body>
+</html>
