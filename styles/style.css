@@ -1,4 +1,4 @@
-body{ 
+body{
 
 	font: 14px "맑은 고딕", sans-serif;
 		line-height: 1.9em;
@@ -11,10 +11,12 @@ a{color:#680;}
 
 h1, h2{color: #566b77; font-weight: 100;}
 
+h1{ margin-bottom: 60px; }
+
 a{text-decoration: none;}
 a:hover{text-decoration: underline;}
 
 ::selection {
  background: rgb(229, 255, 136);
  color: #000;
-} 
+}
