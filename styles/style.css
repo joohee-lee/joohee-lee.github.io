@@ -17,8 +17,8 @@ a:hover{
 
 h1{ margin-bottom: 60px;}
 h1, h2, h3{ color: #566b77;}
-h1, h2 {font-weight: 600;}
-h3{ font-weight: 300;}
+h1, h2 {font-weight: 100;}
+h3{ font-size:14px; font-weight: 200; }
 
 ::selection {
  background: #7f0019;
