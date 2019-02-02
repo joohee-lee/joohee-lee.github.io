@@ -89,6 +89,7 @@ title: leejoohee - career
     } 
 
     .section-about .list{ 
+         opacity: 0;
          animation: slideRight .5s cubic-bezier(.17,.67,.83,.67) .4s forwards;
     }
 
@@ -106,10 +107,12 @@ title: leejoohee - career
 @keyframes slideRight {
 
     0%{
-        transform: translateX(200px);
+        opacity: 0;
+        transform: translateX(100%);
     }
 
     100%{
+        opacity: 1;
         transform: translateX(0);
     }
 }
