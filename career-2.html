@@ -84,14 +84,29 @@ title: leejoohee - career
 
     }
 
-    .card{
-        animation: slideIn .5s cubic-bezier(.17,.67,.83,.67) forwards;
+    .section-about  .card{
+        animation: slideLeft .5s cubic-bezier(.17,.67,.83,.67) forwards;
     } 
 
-@keyframes slideIn {
+    .section-about .list{ 
+         animation: slideRight .5s cubic-bezier(.17,.67,.83,.67) .4s forwards;
+    }
+
+@keyframes slideLeft {
 
     0%{
         transform: translateX(-200px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+
+    0%{
+        transform: translateX(200px);
     }
 
     100%{
