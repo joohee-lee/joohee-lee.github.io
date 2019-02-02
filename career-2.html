@@ -2,16 +2,104 @@
 layout: index
 title: leejoohee - career
 ---
-<section>
-    <h2>About</h2>
-    <span class="photo"><img src="img/joohee.png" alt=""></span>
-    <ul>
+<style>
+    section{ clear: both; }
+    section:after{ 
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .section-about .card{ 
+        position: relative;
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        margin-right: 10px;
+    }
+
+    .section-about .card:after{
+        background-color: #000;
+        opacity: .4;
+    }
+    
+    .section-about .list{ float: left; }
+    
+    .card{
+    position:relative;
+    display: inline-block;
+    max-width:500px;
+    width:32%;
+    margin-left: 1%;
+    font-size:0;
+    overflow: hidden;
+    }
+
+  
+
+    .card .card-img > img{
+        max-width: 100%;
+    }
+
+    .card .card-text{
+        display: block;
+        position: absolute;
+        top:0;
+        left:-100%;
+        width: 100%;
+        height:100%;
+        font-size: 4vw;
+        text-align:center;
+        transition:all .5s;
+        color:#fff;
+        z-index:10;
+    }
+    .card .card-text:before{
+        content:'';
+        display: inline-block;
+        height: 100%;
+        width:1px;
+        vertical-align: middle;
+    }
+
+    .card:after{
+        content:'';
+        position: absolute;
+        top:0;
+        left:-200%;
+        width:200%;
+        height:200%;
+        background:#000;
+        opacity: .4;
+        transition:all .5s;
+        z-index:1;
+        
+    }
+
+    .card:hover:after,
+    .card:hover .card-text{
+        left:0;
+
+    }
+
+</style>
+<section class="section-about">
+     <h2>About</h2>
+
+     <div class="card">
+         <span class="card-img"><img src="img/joohee.png" width="200" alt=""></span>
+         <span class="card-text">Hello, GoodBye.</span>
+     </div>
+     <ul class="list">
         <li>Markup Dev. ui Dev / experience  12years~</li>
         <li>http://jooe.kr</li>
         <!--<li>https://github.com/joohee-lee</li>-->
         <li>jooe.kr.v@gmail.com</li>
         <li>Dorim-dong, Yeongdeungpo-gu, Seoul, Korea.</li>
-    </ul>
+     </ul>    
+</section>
+
+<section>
     <h3>Skills</h3>
     <ul>
         <li>HTML5(Markup) / CSS / SASS</li>
@@ -20,6 +108,7 @@ title: leejoohee - career
         <!--<li>template-Dust.js</li> -->
      </ul>
 </section>
+
 <section>
     <h2>Education</h2>
     <ul>
