@@ -14,7 +14,7 @@ title: leejoohee - career
     </div>
 </div>
 <section class="section-about">
-     <h2>About</h2>
+     <h2 id="about">About</h2>
 
      <div class="card">
          <span class="card-img"><img src="img/joohee.png" width="200" alt=""></span>
@@ -312,66 +312,6 @@ title: leejoohee - career
     </p>
 </section>
 
-<style>
-    .blind{
-        visibility: hidden;
-        overflow: hidden;
-        position: absolute;
-        top: 0;left: 0;
-        width: 1px;
-        height: 1px;
-        clip: rect(1,1,1,1);
-    }
-    .side-top button {
-        border: 0;
-        background: none;
-        padding: 0;
-    }
-    .side-top{
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-    }
-
-   .ico-top{
-        position: relative;
-        display: block;
-        width: 40px;
-        height: 40px;
-        color: #fff;
-        text-align: center;
-        font-size: 12px;
-        background: #000;
-        box-sizing: border-box;
-        padding-top: 20px;
-   }
-
-    .ico-top:before{
-        content: '';
-        position: absolute;
-        top: 10px;
-        left: 50%;
-        margin-left: -5px;
-        width: 10px;
-        height: 10px;
-        display: block;
-        border-top: 1px solid #fff;
-        border-left: 1px solid #fff;
-        transform: rotate(45deg);
-    }
-
-
-    .side-top[data-display="false"]{
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .side-top[data-display="true"]{
-        opacity: 1;
-        visibility: visible;
-    }
-</style>
-
 <div class="side-top" data-display="false">
     <button type="button" name="" class="btn-top" onclick=""><span class="ico-top">top</span></button>
 </div>
@@ -396,7 +336,7 @@ title: leejoohee - career
     }
 
     /* top button */
-    var uiTopShow = function (){
+    function scrollTopBtn(){
 
         var isScroll = true;
         var elTop = document.querySelector('.side-top');
@@ -410,10 +350,16 @@ title: leejoohee - career
                     elTop.setAttribute('data-display', 'false');
             }
         }
-    };
 
-    document.body.onscroll = uiTopShow ;
+    }
 
+    document.body.onscroll = scrollTopBtn();
+
+    function goTop(){
+
+        alert("aaa");
+
+    }
 
 
 </script>
