@@ -2,6 +2,17 @@
 layout: index
 title: leejoohee - career
 ---
+<style>
+    
+</style>
+<header class="header">
+   <div class="menu"><a href="#"></a></div>
+</header>
+<div class="pop-menu">
+    <div class="pop-inner">
+        
+    </div>
+</div>
 <section class="section-about">
      <h2>About</h2>
 
@@ -296,7 +307,7 @@ title: leejoohee - career
 
           return false;
     }
-</script>
+    </script>
 <!--
     <h2>work experience</h2>
     <article>
@@ -317,4 +328,42 @@ title: leejoohee - career
       javascript, jqeury... 
     </p>
 </section>
+
+<style>
+    .side-top{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+
+   .ico-top{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        background: #ccc;
+        box-sizing: border-box;
+        padding-top: 20px;
+   }
+
+    .ico-top:before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        margin-left: -5px;
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        transform: rotation(45deg);
+    }
+</style>
+
+<div class="side-top" data-display="">
+    <button type="button" name="" class="btn-top" onclick=""><span class="ico-top">top</span></button>
+</div>
 
