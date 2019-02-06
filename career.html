@@ -290,24 +290,7 @@ title: leejoohee - career
             </div>
         </div>
     </div>
-    <script>
-    //toggle
-    function toggleDisplay(obj){
-
-        var el = document.getElementsByClassName("card-row")[obj];
-        //console.log(el);
-        //el.dataset.display = false;
-        //console.log(el.dataset.display);
-
-        if ( el.dataset.display === "true" ){
-              el.dataset.display = false;
-          }else{
-              el.dataset.display = true;
-          }
-
-          return false;
-    }
-    </script>
+    
 <!--
     <h2>work experience</h2>
     <article>
@@ -348,6 +331,7 @@ title: leejoohee - career
         position: fixed;
         right: 10px;
         bottom: 10px;
+        opacity: 0;
     }
 
    .ico-top{
@@ -366,6 +350,7 @@ title: leejoohee - career
     .ico-top:before{
         content: '';
         position: absolute;
+        top: 10px;
         left: 50%;
         margin-left: -5px;
         width: 10px;
@@ -375,9 +360,61 @@ title: leejoohee - career
         border-left: 1px solid #fff;
         transform: rotate(45deg);
     }
+
+
+    .side-top[data-dispay="false"]{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .side-top[data-dispay="true"]{
+        opacity: 1;
+        visibility: visible;
+    }
 </style>
 
-<div class="side-top" data-display="">
+<div class="side-top" data-display="false">
     <button type="button" name="" class="btn-top" onclick=""><span class="ico-top">top</span></button>
 </div>
 
+
+<script>
+    //toggle
+    function toggleDisplay(obj){
+
+        var el = document.getElementsByClassName("card-row")[obj];
+        //console.log(el);
+        //el.dataset.display = false;
+        //console.log(el.dataset.display);
+
+        if ( el.dataset.display === "true" ){
+              el.dataset.display = false;
+          }else{
+              el.dataset.display = true;
+          }
+
+          return false;
+    }
+
+    /* top button */
+    var uiTopShow = function (){
+
+        var isScroll = true;
+        var elTop = document.querySelector('.side-top');
+        var scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+
+        if(isScroll){
+
+            if( scrollTop > 200){
+                    elTop.setAttribute('data-display', 'true');
+            }else{
+                    elTop.setAttribute('data-display', 'false');
+            }
+        }
+    };
+
+    document.body.onscroll = uiTopShow ;
+
+
+    
+</script>
