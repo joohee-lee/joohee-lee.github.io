@@ -8,8 +8,8 @@ section:after{
 .section-about .card{ 
     float: left;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     overflow: hidden;
     margin-right: 10px;
     margin-left: 20px;
