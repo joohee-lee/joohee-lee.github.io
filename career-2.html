@@ -2,134 +2,17 @@
 layout: index
 title: leejoohee - career
 ---
-<style>
-    section{ clear: both; }
-    section:after{ 
-        content: '';
-        display: block;
-        clear: both;
-    }
-
-    .section-about .card{ 
-        float: left;
-        position: relative;
-        width: 200px;
-        height: 200px;
-        overflow: hidden;
-        margin-right: 10px;
-        margin-left: 20px;
-    }
-
-    .section-about .card:after{
-        background-color: #000;
-        opacity: .4;
-    }
-    
-    .section-about .list{ float: left; }
-    
-    /*
-    .card{
-        position:relative;
-        float: left;
-        max-width:500px;
-        width:32%;
-        margin-left: 1%;
-        font-size:0;
-        overflow: hidden;
-    }
-    */
-
-    .card .card-img > img{
-        max-width: 100%;
-    }
-
-    .card .card-text{
-        display: block;
-        position: absolute;
-        top:0;
-        left:-100%;
-        width: 100%;
-        height:100%;
-        font-size: 14px;
-        line-height: 1.3;
-        text-align:center;
-        transition:all .5s;
-        color:#fff;
-        z-index:10;
-    }
-    .card .card-text:before{
-        content:'';
-        display: inline-block;
-        height: 100%;
-        width:1px;
-        vertical-align: middle;
-    }
-
-    .card:after{
-        content:'';
-        position: absolute;
-        top:0;
-        left:-200%;
-        width:200%;
-        height:200%;
-        background:#000;
-        opacity: .4;
-        transition:all .5s;
-        z-index:1;
-        
-    }
-
-    .card:hover:after,
-    .card:hover .card-text{
-        left:0;
-
-    }
-
-    .section-about  .card{
-        animation: slideLeft .5s cubic-bezier(.645,.045,.355,1) forwards;
-    } 
-
-    .section-about .list{ 
-         opacity: 0;
-         animation: slideRight .5s cubic-bezier(.645,.045,.355,1) .4s forwards;
-    }
-
-@keyframes slideLeft {
-
-    0%{
-        transform: translateX(-200px);
-    }
-
-    100%{
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideRight {
-
-    0%{
-        opacity: 0;
-        transform: translateX(100%);
-    }
-
-    100%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-</style>
 <section class="section-about">
-     <h2>About</h2>
+     <h2 id="about">About</h2>
 
      <div class="card">
-         <span class="card-img"><img src="img/joohee.png" width="200" alt=""></span>
+         <span class="card-img"><img src="img/joohee.png" width="150" alt=""></span>
          <span class="card-text">Hello, GoodBye.</span>
      </div>
      <ul class="list">
-        <li>Markup Dev. ui Dev / experience  12years~</li>
+        <li>Markup Dev. ui Dev <!--/ experience  12years~ --></li>
         <li><a href="http://jooe.kr" target="_blank">http://jooe.kr</a></li>
-       <li>https://github.com/joohee-lee</li>
+        <!--<li>https://github.com/joohee-lee</li>-->
         <li>jooe.kr.v@gmail.com</li>
         <li>Seoul, Korea.</li>
      </ul>  
@@ -152,6 +35,7 @@ title: leejoohee - career
         <li>상지대학교 전산학과 (1995.02~ 1999.03 )</li>
     </ul>
 </section>
+
 <section>
     <h2>work experience</h2>
     <article>
@@ -163,211 +47,6 @@ title: leejoohee - career
             <li>(주)인투업 / 개발팀 / 2000.04 ~ 2000.01 /  웹개발 / MSSql / ASP </li>
         </ul>
     </article>
-    <style>
-        .comp-card div, .comp-card ul, .comp-card li,
-        .comp-card p, .comp-card h1, .comp-card h2, .comp-card h3{ margin: 0; padding: 0;}
-        .comp-card h1, .comp-card h2, .comp-card h3{ font-weight: 100; }
-
-        .comp-card{
-            font-family: "맑은 고딕", malgun gothic, sans-serif;
-            font-size: 14px;
-            line-height: 1.2;
-            color: #444;
-        }
-        .comp-card .card-header{
-            font-size: 24px;
-            line-height: 1.4;
-            margin-bottom: 10px;
-            color: #566b77;
-        }
-
-        /*
-        .comp-card .card-header::before{
-            display: inline-block;
-            content: '';
-            height: 0px;
-            width: 0px;
-            border: 8px solid;
-            border-color: #7f0019 #7f0019 transparent transparent;
-            transform: rotate(45deg);
-            margin-right: 10px;
-        }
-        */
-
-        .card-row{
-            position: relative;
-            clear: both;
-            box-sizing: border-box;
-            overflow: hidden;
-        }
-
-        .card-row:after{
-            content: '';
-            display: block;
-            clear: both;
-            overflow: hidden;
-        }
-
-        .card-row::before{
-            position: absolute;
-            top: 0px;
-            bottom: -7px;
-            left: 85px;
-            display: block;
-            border-color: #7f0019;
-            border-right: 2px solid #7f0019;;
-            content: ''
-        }
-        .card-row .span-time{
-            /* float: left; */
-            position: absolute;
-            left: 20px; top: 0;
-            display: block;
-            width: 60px;
-            padding-top: 7px;
-            text-align: left;
-            color: #666;
-            font-size: 12px;
-            lin-height: 1.2;
-        }
-        .card-row .div-conts{
-            margin-left: 100px;
-            box-sizing: border-box;
-        }
-
-        .card-row .div-conts::before{
-            position: absolute;
-            top: 7px;
-            left: 80px;
-            content: '';
-            display: inline-block;
-            width: 11px;
-            height: 11px;
-        }
-        .card-row[data-display="true"] .div-conts::before{
-            border: 1px solid #7f0019;
-            border-radius: 100px;
-            background: #7f0019;
-        }
-
-        .card-row[data-display="false"] .div-conts::before{
-            border: 1px solid #7f0019;
-            border-radius: 100px;
-            background: #fff;
-        }
-
-        .card-row[data-display="true"] .pj-conts{
-            display: block;
-        }
-        .card-row[data-display="false"] .pj-conts{
-            display: none;
-        }
-
-        .card-row h3{
-            padding-top: 7px;
-            margin-bottom: 20px;
-            line-height: 1.4;
-        }
-
-        .card-row li{
-            font-size: 13px;
-            line-height: 1.4;
-            margin-bottom: 5px;
-            color: #666;
-        }
-        .card-row .btn-toggle{
-            position: absolute;
-            right: 20px;
-            top: 7px;
-        }
-
-        .first .div-conts::before,
-        .first .btn-toggle{
-            top: 0;
-        }
-        .first .span-time,
-        .first h3{ padding-top: 0; }
-
-        .card-row .div-conts ul{
-            margin: 0 20px 20px;
-        }
-
-        .last::before{
-            /*
-            border-color: none;
-            border-right: 0;
-            */
-            height: 20px;
-        }
-
-        .btn-toggle a{
-            display: block;
-            box-sizing: border-box;
-            color: #888
-        }
-         /*
-        .btn-toggle a::before{
-            content:'';
-            display: inline-block;
-            border: 5px solid transparent;
-            border-top: 5px solid;
-            border-right: 5px solid;
-        }
-
-
-        .card-row[data-display="true"] .btn-toggle a::before{
-            color: #7f0019;
-            transform: rotate(135deg);
-        }
-        .card-row[data-display="false"] .btn-toggle a::before{
-            color: #888;
-            transform: rotate(-45deg);
-        }
-        */
-
-        .el-invisible {
-            background: transparent none !important;
-            border: none !important;
-            display: block !important;
-            height: 1px !important;
-            overflow: hidden !important;
-            padding: 0 !important;
-            position: absolute !important;
-            top: -999999em !important;
-            width: 1px !important;
-            position: absolute;
-            clip: rect(0px 0px 0px 0px);
-        }
-
-        .pj-header a{
-            display: block;
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .pj-header a::before{
-            display: inline-block;
-            content:'';
-            float: right;
-            margin-right: 30px;
-            height: 8px;
-            width: 8px;
-            border: 1px solid #7f0019;
-            border-width: 1px 1px 0 0;
-        }
-
-        .card-row[data-display="true"] .pj-header a::before{
-           transform: rotate(135deg);
-        }
-
-        .card-row[data-display="false"] .pj-header a::before{
-           transform: rotate(-45deg);
-           margin-top: 7px;
-        }
-    </style>
     <div class="comp-card career-card">
         <h2 class="card-header">Professional experience</h2>
         <div class="div-inner">
@@ -393,7 +72,7 @@ title: leejoohee - career
             <div class="card-row first" data-row="1" data-display="true">
                 <span class="span-time">2017.07 ~ 2017.12</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(0); return false;">SM - (주)삼성반도체 , T 스마트 청구서 App</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(1); return false;">SM - (주)삼성반도체 , T 스마트 청구서 App</a></h3>
 
                     <!--
                     <div class="btn-toggle">
@@ -412,7 +91,7 @@ title: leejoohee - career
             <div class="card-row" data-row="2" data-display="true">
                 <span class="span-time">2016.12 ~ 2017.5</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(1); return false;">SI - (주)한미약품 / Ecomerce(복지몰 구축)</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(2); return false;">SI - (주)한미약품 / Ecomerce(복지몰 구축)</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>한미약품 복지몰 구축</li>
@@ -427,7 +106,7 @@ title: leejoohee - career
             <div class="card-row" data-row="3" data-display="true">
                 <span class="span-time">2016.07 ~ 2016.08</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(2); return false;">SM - (주)신라면세점</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(3); return false;">SM - (주)신라면세점</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>Ecomerce 운영 </li>
@@ -441,7 +120,7 @@ title: leejoohee - career
             <div class="card-row" data-row="4" data-display="true">
                 <span class="span-time">2015.12 ~ 2016.06</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(3); return false;">SM - (주)SKT - T world</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(4); return false;">SM - (주)SKT - T world</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>skt 티월드 통신사 운영 </li>
@@ -453,7 +132,7 @@ title: leejoohee - career
             <div class="card-row" data-row="5" data-display="true">
                 <span class="span-time">2015.08 ~ 2015.09</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(4); return false;"> (주)기아자동차 - RWD / AEM 기반</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(5); return false;"> (주)기아자동차 - RWD / AEM 기반</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>RWD 구축</li>
@@ -466,7 +145,7 @@ title: leejoohee - career
             <div class="card-row" data-row="6" data-display="true">
                 <span class="span-time">2015.06~ 2015.07</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(5); return false;">SI - (주)교보문고 - 무인 검색 시스템 / RWD</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(6); return false;">SI - (주)교보문고 - 무인 검색 시스템 / RWD</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>RWD 구축</li>
@@ -479,7 +158,7 @@ title: leejoohee - career
             <div class="card-row" data-row="7" data-display="true">
                 <span class="span-time">2015.04~ 2015.05</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(6); return false;">SI - (주)디즈아크 - GAME 마케팅 PC Web</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(7); return false;">SI - (주)디즈아크 - GAME 마케팅 PC Web</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>게임 홍보 사이트 </li>
@@ -505,7 +184,7 @@ title: leejoohee - career
              <div class="card-row" data-row="9" data-display="true">
                 <span class="span-time">2014.09~ 2014.10</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(7); return false;">SI - (주)교보문고 - 스콜라 리뉴얼 웹 및 모바일 웹</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(9); return false;">SI - (주)교보문고 - 스콜라 리뉴얼 웹 및 모바일 웹</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>PC/MOBILE WEB </li>
@@ -518,7 +197,7 @@ title: leejoohee - career
             <div class="card-row" data-row="10" data-display="true">
                 <span class="span-time">2014.01~ 2014.06</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(9); return false;">SI - (주)삼성생명 - 신TMS – 내부시스템 구축</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(10); return false;">SI - (주)삼성생명 - 신TMS – 내부시스템 구축</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>내부시스템 구축</li>
@@ -530,7 +209,7 @@ title: leejoohee - career
             <div class="card-row" data-row="11" data-display="true">
                 <span class="span-time">2013.05~ 2013.11</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(10); return false;">SI - (주)삼성생명 - 삼성생명 인터넷 완결형 시스템 구축</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(11); return false;">SI - (주)삼성생명 - 삼성생명 인터넷 완결형 시스템 구축</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>PC WEB</li>
@@ -542,7 +221,7 @@ title: leejoohee - career
             <div class="card-row" data-row="12" data-display="true">
                 <span class="span-time">2010.04~ 2013.03</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(11); return false;">SM - (주)삼성 SDS - 삼성 SDS Mobile widget PJ</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(12); return false;">SM - (주)삼성 SDS - 삼성 SDS Mobile widget PJ</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>Mobile widget </li>
@@ -554,7 +233,7 @@ title: leejoohee - career
             <div class="card-row" data-row="13" data-display="true">
                 <span class="span-time">2009.08~ 2010.03</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(12); return false;">SM - (주)삼성 네트웍스 - Mobile widget PJ</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(13); return false;">SM - (주)삼성 네트웍스 - Mobile widget PJ</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>Mobile widget </li>
@@ -566,7 +245,7 @@ title: leejoohee - career
             <div class="card-row" data-row="14" data-display="true">
                 <span class="span-time">2004.04 ~ 2007.04</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(13); return false;">(주)야후코리아 (contract)</a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(14); return false;">(주)야후코리아 (contract)</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>FrontEnd 팀 / 대리 </li>
@@ -578,7 +257,7 @@ title: leejoohee - career
             <div class="card-row" data-row="15" data-display="true">
                 <span class="span-time">2001.02 ~ 2001.10</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(14); return false;">(주)ILS커뮤니케이션 - ILOVESCHOOL </a></h3>
+                    <h3 class="pj-header"><a href="#" title="프로젝트 상세보기" onclick="toggleDisplay(15); return false;">(주)ILS커뮤니케이션 - ILOVESCHOOL </a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>웹개발 / MSSql / ASP </li>
@@ -590,7 +269,7 @@ title: leejoohee - career
             <div class="card-row last" data-row="16" data-display="true">
                 <span class="span-time">1995.03 ~ 1999.02</span>
                 <div class="div-conts">
-                    <h3 class="pj-header"><a href="" title="프로젝트 상세보기" onclick="toggleDisplay(15); return false;">상지대학교 전산학과 졸업</a></h3>
+                    <h3 class="pj-header"><a href="" title="프로젝트 상세보기" onclick="toggleDisplay(16); return false;">상지대학교 전산학과 졸업</a></h3>
                     <div class="pj-conts">
                         <ul>
                             <li>입학 : 1995.03 ~ 졸업 : 1999.02</li>
@@ -600,24 +279,7 @@ title: leejoohee - career
             </div>
         </div>
     </div>
-    <script>
-    //toggle
-    function toggleDisplay(obj){
-
-        var el = document.getElementsByClassName("card-row")[obj];
-        //console.log(el);
-        //el.dataset.display = false;
-        //console.log(el.dataset.display);
-
-        if ( el.dataset.display === "true" ){
-              el.dataset.display = false;
-          }else{
-              el.dataset.display = true;
-          }
-
-          return false;
-    }
-</script>
+    
 <!--
     <h2>work experience</h2>
     <article>
@@ -639,3 +301,57 @@ title: leejoohee - career
     </p>
 </section>
 
+<div class="side-top" data-display="false">
+    <button type="button" name="" class="btn-top" onclick="goTop(); return false;"><span class="ico-top">top</span></button>
+</div>
+
+<!--jquery / top 버튼 animate  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    //toggle
+    function toggleDisplay(obj){
+
+        var el = document.getElementsByClassName("card-row")[obj];
+        //console.log(el);
+        //el.dataset.display = false;
+        //console.log(el.dataset.display);
+
+        if ( el.dataset.display === "true" ){
+              el.dataset.display = false;
+          }else{
+              el.dataset.display = true;
+          }
+
+          return false;
+    }
+
+    /* top button */
+    function scrollTopBtn(){
+
+        var isScroll = true;
+        var elTop = document.querySelector('.side-top');
+        var scrollTop = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
+
+        if(isScroll){
+
+            if( scrollTop > 200){
+                    elTop.setAttribute('data-display', 'true');
+            }else{
+                    elTop.setAttribute('data-display', 'false');
+            }
+        }
+
+    }
+
+    document.body.onscroll = scrollTopBtn ;
+
+    function goTop(){
+
+        $('html, body').animate({
+            
+            scrollTop : 0
+          }, 300, function() {
+            // Animation complete.
+        });
+    }
+</script>
