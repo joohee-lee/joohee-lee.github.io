@@ -81,12 +81,13 @@ section:after{
 }
 
 .section-about  .card{
-    animation: slideLeft .5s cubic-bezier(.645,.045,.355,1) forwards;
+    /*animation: slideLeft .5s cubic-bezier(.645,.045,.355,1) forwards;*/
 } 
 
 .section-about .list{ 
-     opacity: 0;
+    /* opacity: 0;
      animation: slideRight .5s cubic-bezier(.645,.045,.355,1) .4s forwards;
+    */ 
 }
 
 @keyframes slideLeft {
