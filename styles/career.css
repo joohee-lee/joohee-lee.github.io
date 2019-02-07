@@ -297,6 +297,10 @@ section:after{
     font-weight: bold;
 }
 
+.pj-header a:hover{
+    color: #7f0019;
+}
+
 .pj-header a::before{
     display: inline-block;
     content:'';
