@@ -316,7 +316,8 @@ title: leejoohee - career
     <button type="button" name="" class="btn-top" onclick="goTop(); return false;"><span class="ico-top">top</span></button>
 </div>
 
-
+<!--jquery / top 버튼 animate  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     //toggle
     function toggleDisplay(obj){
@@ -357,8 +358,12 @@ title: leejoohee - career
 
     function goTop(){
 
-        alert("aaa");
-
+        $('html, body').animate({
+            
+            scrollTop : 0
+          }, 300, function() {
+            // Animation complete.
+        });
     }
 
 
