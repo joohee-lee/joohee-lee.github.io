@@ -236,7 +236,7 @@ section:after{
     top: 0;
 }
 .first .span-time,
-.first h3{ padding-top: 0; }
+.first h3{ padding-top: 0; color: #7f0019;}
 
 .card-row .div-conts ul{
     margin: 0 20px 20px;
